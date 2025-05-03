@@ -9,6 +9,6 @@ class Settings(BaseSettings):
     PORT: int
     HOST: str
     PROCESS_ASYNC: bool
-    DELAY: int
+    DELAY: float
 
 settings = Settings()

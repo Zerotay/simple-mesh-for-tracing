@@ -25,7 +25,9 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
 
-CMD ["uv", "run", "main.py"]
+CMD ["uv", "run", "opentelemetry-instrument", "python", "main.py"]
+# If you want to run the server without tracing.
+# CMD ["uv", "run", "main.py"]
 
 # Reset the entrypoint, don't invoke `uv`
 ENTRYPOINT []

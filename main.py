@@ -25,6 +25,6 @@ if __name__ == "__main__":
         "main:app",
         port= settings.PORT,
         host= str(settings.ADDRESS),
-        reload=True,
+        # reload=True,
     )
 

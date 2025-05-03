@@ -1,0 +1,10 @@
+[project]
+name = "simple-mesh-tracing"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.12",
+    "prometheus-fastapi-instrumentator>=7.1.0",
+    "uvicorn>=0.34.2",
+]
